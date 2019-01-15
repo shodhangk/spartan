@@ -1,5 +1,5 @@
 class WelocomeController < ApplicationController
- #include PrintosUtils 
+ include PrintosUtils 
  
  def index
  end
