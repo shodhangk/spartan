@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Pagination_box</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="36" height="36" rx="2"></rect>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Global/Components/Pagination-Copy" transform="translate(-280.000000, -12.000000)">
+            <g id="Pagination-button/back-to-start" transform="translate(267.000000, 0.000000)">
+                <g id="Group-11-Copy-5" opacity="0" stroke-width="1">
+                    <g id="Rectangle-40-Copy-5">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <rect stroke="#B9B8BB" stroke-width="1" x="0.5" y="0.5" width="35" height="35" rx="2"></rect>
+                    </g>
+                </g>
+                <g id="Icons/24/Arrow/double/Right-Copy" transform="translate(6.000000, 6.000000)" fill="#1C1C1C">
+                    <polygon id="Rectangle-52" transform="translate(13.000000, 12.000000) rotate(-315.000000) translate(-13.000000, -12.000000) " points="9 8 17 8 17 16 16 16 16 9 9 9"></polygon>
+                    <polygon id="Rectangle-52" transform="translate(8.000000, 12.000000) rotate(-315.000000) translate(-8.000000, -12.000000) " points="4 8 12 8 12 16 11 16 11 9 4 9"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,24 @@
+<div ng-show="shouldShowPage('customerDetails')" class="cust_detail">
+	<div>
+		<input type="image" src="<%= image_path('arrow-left.svg')%>"  ng-click="backToCustomerList()" class="detail_back">
+	</div>
+	<div class="container nav_tab_container">
+		<ul class="nav nav-tabs">
+			<li class="{{is_active('Customer profile')}}" ng-click="setActiveTab('Customer profile', 'Customer main info')" ><a>Customer profile</a></li>
+			<li class="{{is_active('Uploaded client files')}}" ng-click="setActiveTab('Uploaded client files', 'Uploaded client files')"><a>Uploaded client files</a></li>
+			<li class="{{is_active('Pre-assesments')}}" ng-click="setActiveTab('Pre-assesments', 'Pre-assesments')"><a>Pre-assesments</a></li>
+			<li class="{{is_active('Reports')}}" ng-click="setActiveTab('Reports', 'Reports')"><a>Reports</a></li>
+			<li class="{{is_active('Workshops')}}" ng-click="setActiveTab('Workshops', 'Workshops')"><a>Workshops</a></li>
+		</ul>
+		<br>
+	</div>
+	<div ng-show="is_active('Customer profile')" style="margin-top: 30px;">
+		<%= render 'customer_profile' %> 
+	</div>
+	<div ng-show="is_active('Uploaded client files')">Upload Client Files</div>
+	<div ng-show="is_active('Pre-assesments')">Pre-assesments</div>
+	<div ng-show="is_active('Reports')">Reports</div>
+	<div ng-show="is_active('Workshops')" style="margin-top: 30px;">
+		<%= render 'workshops' %> 
+	</div>
+</div>

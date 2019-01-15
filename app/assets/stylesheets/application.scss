@@ -13,3 +13,32 @@
  *= require_tree .
  *= require_self
  */
+
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+ /*@import "fonts.scss";*/
+
+ table.hp-aligned td {
+ 	vertical-align: middle !important;
+ }
+
+ .ellipses {
+ 	overflow: hidden;
+ 	white-space: nowrap;
+ 	text-overflow: ellipsis;
+ }
+
+ .max_w_200 {
+ 	max-width: 200px;
+ }
+
+ .no_records_found {
+ 	right: 22px;
+ 	position: absolute;
+ 	text-align: center;
+ 	width: 100%;
+ 	margin-top: 217px;
+ 	font-size: 15px;
+ 	font-weight: bold;
+ }
+

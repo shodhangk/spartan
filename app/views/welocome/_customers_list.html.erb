@@ -1,0 +1,97 @@
+<div ng-show="shouldShowPage('customerList')">
+ <div class="container-fluid" style="margin-top: 20px;padding-left: 30px;">
+  <div class="row">
+   <div class="col-xs-6 col-sm-3 col-md-2 col-lg-2 kpi_bar_tab align_kpi_tabs">
+    <div style="padding-top: 6px;">
+     <img class="kpi_doc_image" src="<%= image_path('building.svg') %>">
+     <span class="kpi_content_one">PENDING</span>
+     <span class="kpi_content_two">VISIT</span>
+     <span class="kpi_content_three">11</span>
+   </div>
+ </div>
+ <div class="col-xs-6 col-sm-3 col-md-2 col-lg-2 kpi_bar_tab align_kpi_tabs ml-1">
+  <div style="padding-top: 6px;">
+   <img class="kpi_doc_image" src="<%= image_path('building.svg') %>">
+   <span class="kpi_content_one">PART AN</span>
+   <span class="kpi_content_two">DONE</span>
+   <span class="kpi_content_three">9</span>
+ </div>
+</div>
+<div class="col-xs-6 col-sm-3 col-md-2 col-lg-2 kpi_bar_tab align_kpi_tabs ml-1">
+  <div style="padding-top: 6px;">
+   <img class="kpi_doc_image" src="<%= image_path('building.svg') %>">
+   <span class="kpi_content_one">PENDING</span>
+   <span class="kpi_content_two">PART AN</span>
+   <span class="kpi_content_three">2</span>
+ </div>
+</div> 
+<div class="col-xs-6 col-sm-6 col-md-5 col-lg-5 align_kpi_tabs ml-1">
+  <!-- <input type="text" placeholder="Name" ng-model="search.document_name" class="ng-pristine ng-valid searcher_input"> -->
+  <input type="text" placeholder="Search something" ng-model="search" class="cust_list_search_tab">
+</div>
+</div>
+</div>
+<div style="margin-left: 16px;margin-top: 32px;">
+  <div class="customers_list">Customers List</div>
+  <div style="display: inline;float: right;padding-right: 35px;">
+   <span style="font-weight: bold;margin-right: 12px;">View by</span>
+   <div class="dropdown" style="display: inline-flex;">
+    <button class="btn cust_list_dd dropdown-toggle" type="button" data-toggle="dropdown">All Customers
+     <span class="caret"></span></button>
+     <ul class="dropdown-menu">
+      <li><a href="#">cust1</a></li>
+      <li><a href="#">cust2</a></li>
+      <li><a href="#">cust3</a></li>
+    </ul>
+  </div> 
+  <span style="font-weight:bold;margin-right:12px;margin-left:12px;">Status</span>
+  <div class="dropdown" style="display: inline-flex;">
+   <button class="btn cust_list_dd dropdown-toggle" type="button" data-toggle="dropdown">All
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+     <li><a href="#">status1</a></li>
+     <li><a href="#">status2</a></li>
+     <li><a href="#">status3</a></li>
+   </ul>
+ </div>
+</div>
+</div>
+<div class="customer_table">
+  <table class="table hp-aligned cust_table"> 
+   <thead class="cust_table_header">
+    <tr>
+     <th ng-repeat="header in customerHeaders">
+      <div class="cell_content ellipses devicelist_header_div">{{header}}</div>
+    </th>
+  </tr>
+</thead>
+<div class="documents_loading_image" ng-show="showLoaderIndicator">
+  <img src="<%= image_path('spinner.gif') %>">
+</div>
+<div ng-show="(customers | filter:search:strict).length == 0 && !showLoaderIndicator" class="no_records_found">
+ NO CUSTOMERS FOUND
+</div>
+<tbody> 
+ <tr my-post-repeat-directive dir-paginate="customer in customers | filter:search:strict | itemsPerPage: listPerPage : 'customerPagination'" pagination-id="customerPagination" ng-click="showCustomerDetail(customer)">
+   <td><input type="checkbox"></td>
+   <td class="ellipses max_w_200"><div>{{customer.customer_name}}</div></td>
+   <td class="ellipses max_w_200">{{customer.main_contact}}</td>
+   <td class="ellipses max_w_200">{{customer.phone_number}}</td>
+   <td class="ellipses max_w_200">{{customer.country}}</td>
+   <td class="ellipses max_w_200">{{customer.region}}</td>
+   <td class="ellipses max_w_200">{{customer.send_files}}</td>
+   <td class="ellipses max_w_200">{{customer.scheduled_visit}}</td>
+   <td class="ellipses max_w_200">{{customer.r2p_status}}</td>
+   <td class="ellipses max_w_200">{{customer.serial_number}}</td>
+   <td class="ellipses max_w_200">{{customer.product_number}}</td>
+ </tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div ng-show="!showLoaderIndicator && shouldShowPage('customerList')" class="other-controller" style="position: absolute;background: white;left: 0px;right: 0px;">
+  <div class="text-center">
+    <dir-pagination-controls boundary-links="true" pagination-id="customerPagination"></dir-pagination-controls>
+  </div>
+</div>

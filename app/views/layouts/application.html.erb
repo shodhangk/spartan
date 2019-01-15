@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Spartan</title>
+    <title>ReportNow</title>
+    <link rel="SHORTCUT ICON" href="<%= asset_path ("favicon.ico") %>" type="image/x-icon">
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+  <script src="https://cdn.printos.com/blue/loader.js"></script>
   </head>
 
-  <body>
+  <body style="font-family: FontAwesome5Brands-Regular;">
+    <printos-header app-id='reseller-portal' ></printos-header> 
     <%= yield %>
   </body>
 </html>

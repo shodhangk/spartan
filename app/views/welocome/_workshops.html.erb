@@ -1,0 +1,22 @@
+<div class="tab">
+	<div class="cust_detail_vertical_tabs {{isVerticalTabActive('Workshops')}}" ng-click="setVerticalTabActive('Workshops')">Workshops</div>
+	<div class="create_workshop_btn_div">
+		<button class="create_workshop_btn">Create new workshop</button>
+	</div>
+</div>
+<div id="Workshops" class="tabcontent">
+	<div class="container-fluid" style="">
+		<div class="row" style="padding-top: 20px;">
+			<div ng-repeat="block in blocks track by $index" class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+			<div class="ws_div">
+				<div class="ws_status">
+				<span class="ws_inner_data">tick</span>
+			</div>
+			<div class="ws_data">
+					<span class="ws_inner_data">{{block}}</span>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+</div>

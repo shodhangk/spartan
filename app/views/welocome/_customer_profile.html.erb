@@ -1,0 +1,113 @@
+		<div class="container-fluid cp_outer_container">
+			<div class="row">
+				<div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 cp_first_section">
+					<div class="cust_detail_vertical_div">
+						<div class="cust_detail_vertical_tabs {{isVerticalTabActive('Customer main info')}}" ng-click="setVerticalTabActive('Customer main info')">Customer main info</div>
+						<div class="cust_detail_vertical_tabs {{isVerticalTabActive('Printer model')}}" ng-click="setVerticalTabActive('Printer model')">Printer model</div>
+					</div>
+				</div>
+				<div>
+					<div class="col-xs-9 col-sm-9 col-md-10 col-lg-10 cp_second_section" ng-show="isVerticalTabActive('Customer main info')">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-md-6 col-lg-6 cust_info_div_padding">
+									<label class="cust_info_header">CUSTOMER COMPANY NAME</label>
+									<div>
+										<input type="text" name="ccn" ng-model="customerCompanyName" class="cust_info_textfield">
+									</div>
+								</div>
+								<div class="col-md-3 col-lg-3 cust_info_div_padding">
+									<label class="cust_info_header">MAIN CONTACT NAME</label>
+									<div>
+										<input type="text" name="mcn" ng-model="mainContactName" class="cust_info_textfield">
+									</div>
+								</div>
+								<div class="col-md-3 col-lg-3 cust_info_div_padding">
+									<label class="cust_info_header">E-MAIL ADDRESS</label>
+									<div>
+										<input type="text" name="ema" ng-model="emailAddress" class="cust_info_textfield">
+									</div>       
+								</div>
+							</div>
+							<div class="row" style="margin-top: 30px;">
+								<div class="col-md-6 col-lg-6 cust_info_div_padding">
+									<label class="cust_info_header">CUSTOMER SITE ADDRESS</label>
+									<div>
+										<input type="text" name="csa" ng-model="customerSiteAddress" class="cust_info_textfield">
+									</div>
+								</div>
+								<div class="col-md-3 col-lg-3 cust_info_div_padding">
+									<label class="cust_info_header">CUSTOMER SITE COUNTRY/STATE</label>
+									<div>
+										<div class="dropdown" style="display: inline-flex;width: 100%">
+											<button class="btn cust_info_country_dd_btn dropdown-toggle" type="button" data-toggle="dropdown">Switzerland
+												<span class="caret cust_info_country_dd_caret"></span></button>
+												<ul class="dropdown-menu">
+													<li><a href="#">INDIA</a></li>
+													<li><a href="#">INDIA</a></li>
+													<li><a href="#">INDIA</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 cust_info_div_padding">
+										<label class="cust_info_header">MAIN CONTACT PHONE NUMBER</label>
+										<div>
+											<input type="text" name="mcpn" ng-model="mainContactPhoneNumber" class="cust_info_textfield">
+										</div>       
+									</div>
+								</div>
+								<div class="row" style="margin-top: 30px;">
+									<div class="col-md-6 col-lg-6 cust_info_div_padding">
+										<label class="cust_info_header">REGION</label>
+										<div class="row cust_info_region">
+											<div class="col-sm-4 col-xs-4 col-md-4 col-lg-4"><input type="radio" name="region" value="ams"><span class="cust_region_padding">AMS</span></div>
+											<div class="col-sm-4 col-xs-4 col-md-4 col-lg-4"><input type="radio" name="region" value="apj"><span class="cust_region_padding">APJ</span></div>
+											<div class="col-sm-4 col-xs-4 col-md-4 col-lg-4"><input type="radio" name="region" value="emea" checked><span class="cust_region_padding">EMEA</span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-9 col-sm-9 col-md-10 col-lg-10 cp_second_section" ng-show="isVerticalTabActive('Printer model')">
+							<div>
+								<div class="container-fluid" style="margin-left: 0px !important;width: 75%;">
+									<div class="row" style="margin-top: 30px;">
+										<div class="col-md-12 col-lg-12 cust_info_div_padding">
+											<label class="cust_info_header">PRINTER MODEL</label>
+											<div>
+												<input type="text" name="pm" ng-model="printerModel" class="cust_info_textfield">
+											</div>
+										</div>
+									</div>
+									<div class="row" style="margin-top: 30px;">
+										<div class="col-md-4 col-lg-4 cust_info_div_padding">
+											<label class="cust_info_header">PRINTER SERIAL NUMBER</label>
+											<div>
+												<input type="text" name="psn" ng-model="printerSerialNumber" class="cust_info_textfield">
+											</div>
+										</div>
+										<div class="col-md-8 col-lg-8 cust_info_div_padding">
+											<label class="cust_info_header">SERIAL NUMBER</label>
+											<div>
+												<input type="text" name="sn" ng-model="serialNumber" class="cust_info_textfield">
+											</div>
+										</div>
+									</div>
+									<div class="row" style="margin-top: 30px;">
+										<div class="col-md-12 col-lg-12 cust_info_div_padding">
+											<label class="cust_info_header">ADDITIONAL INFORMATION</label>
+											<div>
+												<textarea name="modelDescription" class="model_description_area" ng-model="additionalInformation"></textarea>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div style="right: 57px;position: absolute;top: 22px;">
+								<img class="" src="<%= image_path('printerImage') %>">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>

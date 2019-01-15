@@ -1,0 +1,319 @@
+// Place all the styles related to the welocome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.kpi_doc_image {
+	margin-top: 4px;
+	max-width: 40px;
+	max-height: 35px;
+}
+
+.kpi_bar_tab {
+	border: 1px solid #e9e9e9;
+	margin-right: 23px;
+	min-height: 57px !important;
+}
+
+.kpi_content_one {
+	position: absolute;
+	margin-left: 10px;
+}
+
+.kpi_content_two {
+	position: absolute;
+	top: 28px;
+	margin-left: 10px;
+}
+
+.kpi_content_three {
+	float: right;
+	font-size: 32px;
+	padding-right: 20px;
+}
+
+.customers_list {
+	font-weight: bold;
+	display: inline;
+	font-size: 22px;
+	padding-left: 6px;
+}
+
+.customer_table {
+	top: 20px;
+	position: relative;
+	padding-right: 20px;
+	padding-left: 20px;	
+}
+
+.cust_list_search_tab {
+	width: 100%;
+	height: 57px;
+}
+
+.align_kpi_tabs {
+	margin-top: 8px;
+	padding: 0px !important;
+}
+
+.cust_table {
+	border: 1px solid #e2e2e2;
+}
+
+.cust_table_header {
+	background-color: #ffffff;
+	color: #2daae0;
+}
+
+.cust_list_dd {
+	border-radius: 20px !important;
+	border: 0.5px solid #e6e6e6 !important;
+}
+
+.cust_list_dd:focus, .cust_list_dd.focus, .cust_list_dd:active, .cust_list_dd.active {
+	outline: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+.cust_detail {
+	margin-right: 60px;
+	margin-left: 60px;
+}
+
+.cust_detail_container {
+	padding: 0px !important;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/*.cust_detail_tabs {
+
+}
+
+.cust_detail_tabs:active, .cust_detail_tabs.active {
+	color: #14a3de !important;
+	}*/
+
+	.cp_outer_container {
+		min-height: 508px;
+		border: 2px solid #dfdfdf;
+	}
+
+	.cp_first_section {
+		padding: 0px !important;
+	}
+
+	.cp_second_section {
+		min-height: 508px !important;
+		overflow: auto;
+		padding-top: 18px;
+		max-height: 534px;
+		border-left: 2px solid #dfdfdf;
+	}
+
+	.cust_detail_vertical_div {
+		background-color: #f9f9f9;
+		color: #979797;
+	}
+
+	.cust_detail_vertical_tabs {
+		padding-top: 8.5px;
+		min-height: 42px;
+		font-weight: bold;
+		border-bottom: 2px solid #dfdfdf;
+		padding-left: 8px;
+		cursor: pointer;
+		width: 100%;
+		text-align: left;
+	}
+
+	.cust_detail_vertical_tabs:active, .cust_detail_vertical_tabs.active {
+		background: #0095da;
+		color: white;
+	}
+
+	.cust_info_div_padding {
+		padding-top: 13px;
+	}
+
+	.cust_info_header {
+		color: #888888;
+	}
+
+	.cust_info_textfield {
+		padding-left: 11px;
+		width: 100%;
+		height: 40px;
+		font-weight: bold;
+		border: none; 
+		border:solid 1px #e7e7e7;
+		border-radius: 10px;
+	}
+
+	.cust_info_region {
+		margin: 0px !important;
+		border: solid 1px #e7e7e7;
+		border-radius: 10px;
+		width: 100%;
+		height: 40px;
+		font-weight: bold;
+		padding-top: 8px;
+	}
+
+	.cust_region_padding {
+		padding-left: 8px;
+	}
+
+	.cust_info_country_dd_btn {
+		text-align: left !important;
+		border: solid 1px #e7e7e7 !important;
+		border-radius: 10px !important;
+		width: 100%;
+		font-weight: bold !important;
+	}
+
+	.cust_info_country_dd_caret {
+		float: right;
+		margin-top: 9px
+	}
+
+	.nav-tabs {
+		border-bottom: 2px solid #93d0ed !important;
+	}
+
+	.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+		border: 2px solid #93d0ed !important;
+		border-bottom: none !important;
+		color: #14a3de !important;
+	}
+
+	.nav_tab_container {
+		padding: 0px !important;
+		width: 100% !important;
+		/*margin: 0px !important;*/
+		margin-top: 35px;
+	}
+
+	.detail_back {
+		height: 35px;
+		margin-top: 15px;
+	}
+	
+	.detail_back:focus, .detail_back.focus {
+		outline: none !important;
+	}
+
+	.tab {
+		float: left;
+		border: 2px solid #dfdfdf;
+		width: 20%;
+		/*min-height: 508px;*/
+		height: 540px;
+		position: relative;
+		/*background-color: #f9f9f9 !important;*/
+		color: #979797 !important;
+		overflow: auto;
+	}
+
+	/* Style the buttons inside the tab */
+/*.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  }*/
+
+  /* Change background color of buttons on hover */
+/*.tab button:hover {
+  background-color: #ddd;
+  }*/
+
+  /* Create an active/current "tab button" class */
+/*.tab button.active {
+  background-color: #ccc;
+  }*/
+
+  /* Style the tab content */
+  .tabcontent {
+  	float: left;
+  	padding: 0px 12px;
+  	border: 2px solid #dfdfdf;
+  	width: 80%;
+  	border-left: none;
+  	height: 540px;
+  	overflow: auto;
+  }
+
+  textarea[name=modelDescription] {
+  	resize: none;
+  }
+
+  .model_description_area {
+  	width: 100%;
+  	height: 160px;
+  	border: solid 1px #e7e7e7;
+  	border-radius: 10px;
+  }
+
+  .create_workshop_btn_div {
+  	text-align: center;
+  	position: absolute;
+  	bottom: 10px;
+  	width: 100%;
+  }
+
+  .create_workshop_btn {
+  	border-radius: 7px;
+  	background: white;
+  	color: #7d7d7d;
+  	min-height: 36px;
+  }
+
+  .create_workshop_btn:focus, .create_workshop_btn.focus {
+  	outline: 0 !important;
+  }
+
+  .ws_div {
+  	border: 1px solid #e5e5e5;
+  	border-radius: 5px;
+  	margin-top: 10px;
+  	/*min-height: 45px*/
+  }
+
+  .ws_status {
+  	line-height: 50px;
+  	text-align: center;
+  	width: 20%;
+  	display: inline-block;
+  	background: aliceblue;
+  }
+
+  .ws_data {
+  	line-height: 50px;
+  	text-align: center;
+  	width: 75%;
+  	display: inline-block
+  }
+
+  .ws_inner_data {
+  	vertical-align: middle;
+  	line-height: normal;
+  }
+
+  .documents_loading_image {
+  	position: fixed;
+  	left: 45%;
+  	top: 58%;
+  }
+
+
+
+
+
