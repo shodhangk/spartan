@@ -16,7 +16,7 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
- /*@import "fonts.scss";*/
+ @import "*";
 
  table.hp-aligned td {
  	vertical-align: middle !important;
